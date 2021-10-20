@@ -1,4 +1,4 @@
 # google-drive-clone-jsexpert5
 Clone do Google Drive fetio no evento JS Expert 5. Upload de multiplos arquivos, 100% de teste com Jest, streams, upload sob demanda, websocket e etc.
 
-16
+git clone https://github.com/felippedeiro/semana-javascript-expert05.git --recurse-submodules
