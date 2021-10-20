@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gdrive-deployment
+spec:
+  selector:
+    matchLabels:
+      app: gdrive
+  template:
+    metadata:
+      labels:
+        app: gdrive
+    spec:
+      containers:
+      - name: gdrive
+        image: felippedeiro/gdrive-cole:v1
+        ports:
+        - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gdrive-service
+spec:
+  selector:
+    app: gdrive
+  ports:
+  - port: 80
+    targetPort: 8080
