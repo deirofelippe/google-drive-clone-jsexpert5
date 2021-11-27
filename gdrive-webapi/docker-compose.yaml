@@ -1,13 +1,17 @@
-version: "2"
+version: "3"
 services:
-  node:
-    image: .
-    user: "node"
+  gdrive-webapi:
+    # image: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # user: "node"
     # working_dir: /home/node/app
     # environment:
     #   - NODE_ENV=production
     volumes:
-      - ./:/home/node/app
+      - .:/home/node/app
     # expose:
     #   - "8080"
     # command: "npm start"
