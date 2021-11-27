@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: gdrive-configmap
-data:
-  env: |
-    port=8080
