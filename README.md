@@ -9,3 +9,4 @@ npm i -D jest@27 nodemon@2.0
 npm i pino@6.8 pino-pretty@5.1 socket.io@4.1
 npm rm nodemon
 npm jest --init (iniciar o jest)
+
