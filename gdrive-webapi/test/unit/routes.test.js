@@ -99,7 +99,7 @@ describe('#Routes test suite', () => {
             }
          ]
 
-         jest.spyOn(routes.fileHelper, routes.fileHelper.getFilesStatus.name).mockRejectedValue(filesStatusMock)
+         jest.spyOn(routes.fileHelper, routes.fileHelper.getFilesStatus.name).mockResolvedValue(filesStatusMock)
 
          params.request.method = 'GET'
          await routes.handler(...params.values())
