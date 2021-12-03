@@ -11,8 +11,8 @@ const isProduction = process.env.NODE_ENV === 'production'
 process.env.USER = process.env.USER ?? 'system_user'
 
 const localHostSSL = {
-   key: fs.readFileSync('./certificates/key.pem'),
-   cert: fs.readFileSync('./certificates/cert.pem')
+   key: fs.readFileSync('./certificates/key.pem') || '',
+   cert: fs.readFileSync('./certificates/cert.pem') || ''
 }
 
 const protocol = isProduction ? http : https
