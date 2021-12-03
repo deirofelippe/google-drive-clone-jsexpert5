@@ -1,3 +1,7 @@
+.scannerwork
+certificates/*.pem
+coverage
+
 # Logs
 logs
 *.log
