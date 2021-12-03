@@ -1,5 +1,4 @@
 .scannerwork
-certificates/*.pem
 coverage
 extra-cicd
 downloads
