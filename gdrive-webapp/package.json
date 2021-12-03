@@ -4,14 +4,16 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-     "start": "npx http-server public",
-     "dev": "npx http-server public --cert certificates/cert.pem --key certificates/key.pem --ssl -o"
+      "start": "npx http-server public",
+      "dev": "npx http-server public --cert certificates/cert.pem --key certificates/key.pem --ssl -o"
    },
    "keywords": [],
    "author": "felippedesouza",
    "license": "ISC",
    "dependencies": {
-     "http-server": "^0.12.3"
+      "http-server": "^0.12.3"
+   },
+   "engines": {
+      "node": "16"
    }
- }
- 
+}

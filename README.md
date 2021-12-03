@@ -14,18 +14,18 @@
 
 ### Heroku (Prod)
 
-1. no `gdrive-app/public/app.js`, coloque a url referente a sua aplicacao do heroku
-   
-   ![](./imgs/jsexpert-3.png)
-
 1. crie uma conta no heroku
-   1. instale o CLI (`sudo snap install heroku --classic`)
-   1. faça o login (`heroku login`)
+   1. instale o CLI: `sudo snap install heroku --classic`
+   1. faça o login: `heroku login`
 1. crie uma instancia no heroku: `heroku apps:create gdrive-webapp`
    
    ![](./imgs/jsexpert-1.png)
 
    **Repita o passo para o gdrive-webapi**
+
+1. no `gdrive-webapp/public/app.js`, coloque a url referente a sua aplicacao do heroku
+   
+   ![](./imgs/jsexpert-3.png)
 
 1. crie um remote do heroku no git: `git remote add heroku-app https://git.heroku.com/gdrive-webapp.git`
    
@@ -40,7 +40,7 @@
 ## Outros comandos
 
 - `heroku apps`
-- `heroku logs -t`
+- `https://gdrive-webapp-fs.herokuapp.com/`
 - `heroku ps:exec --remote heroku-api`
 - `heroku run "df -h" --size=free --remote heroku-api`
 - `heroku apps:destroy heroku-api`
